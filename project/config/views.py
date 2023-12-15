@@ -9,3 +9,8 @@ def saludo2(request):
 
 def nombre (request, nombre):
     return HttpResponse(nombre)
+
+def fecha_hora(request):
+    from  datetime import datetime
+    ahora = datetime.now().strftime(r"%d/%m/%Y %H:%M:%S")
+    return HttpResponse(ahora)
