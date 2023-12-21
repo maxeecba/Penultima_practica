@@ -52,14 +52,15 @@ git merge dev: primero debemos pararnos en la rama principal para ejecutar este 
 django-admin startapp core: Es el primer comando que vamos a usar para crear una aplicacion, 
 
 paso1:crear una carpeta templates dentro de la carpeta core
+----------------------------------------------------------------------------------------
 paso2: crear una carpeta que se llame igual que el proyecto en este caso "core"
 paso3: dentro de la carpeta core crear un archivo .index.html !+tab (cambiamos lenguaje)
----------------
+----------------------------------------------------------------------------------------
 paso4: vamos a views.py que esta dentro de core, creamos una funcion 
 def index(request):
     return render(request,"core/index.hml)#primero nombre de la plantilla(va buscar nuestro archivo dentro de la carpeta template, por lo tanto tenemos que poner nuestra subcarpeta core(nombre de la aplicacion) seguido del archivo index.html )
 en esta funcion vamos a devolver una plantilla
----------------
+----------------------------------------------------------------------------------------
 paso5: Crear la urls.py dentro de core hacemos una copia de la urls de config.y dejamos solo
 from django.urls import path
 from .views import index (index es el nombre de nuestra funcion)
