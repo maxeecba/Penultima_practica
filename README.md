@@ -58,7 +58,8 @@ paso3: dentro de la carpeta core crear un archivo .index.html !+tab (cambiamos l
 ----------------------------------------------------------------------------------------
 paso4: vamos a views.py que esta dentro de core, creamos una funcion 
 def index(request):
-    return render(request,"core/index.hml)#primero nombre de la plantilla(va buscar nuestro archivo dentro de la carpeta template, por lo tanto tenemos que poner nuestra subcarpeta core(nombre de la aplicacion) seguido del archivo index.html )
+    return render(request,"core/index.hml)
+primero nombre de la plantilla(va buscar nuestro archivo dentro de la carpeta template, por lo tanto tenemos que poner nuestra subcarpeta core(nombre de la aplicacion) seguido del archivo index.html )
 en esta funcion vamos a devolver una plantilla
 ----------------------------------------------------------------------------------------
 paso5: Crear la urls.py dentro de core hacemos una copia de la urls de config.y dejamos solo
